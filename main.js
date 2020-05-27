@@ -1,17 +1,11 @@
-const listSmartphone = ['Samsung', 'Xiaomi', 'Nokia', 'Oppo']
+const myPlace = "Tangerang Selatan"
+const myName = "Hassan"
+const myProfession = "Lecturer"
 
-// Var
-// dengan Var, maka nilainya bersifat global
-for (var i = 0; i < listSmartphone.length; i++) {
-    console.log(listSmartphone[i])
-}
+// Tanpa String Concat
+let perkenalanDiri = "Halo, perkenalkan nama saya " + myName + ", berprofesi sebagai " + myProfession + " di daerah " + myPlace
+console.log(perkenalanDiri)
 
-console.log(`Bisa tahu nilai i adalah ${i}`)
-
-// Dengan Let
-// dengan Let, maka nilainya terbatas pada scope
-for (let j = 0; i < listSmartphone.length; i++) {
-    console.log(listSmartphone[i])
-}
-
-console.log(`Gak bisa tahu nilai dari j adalah ${j}`)
+// Menggunakan String Concat
+let perkenalanDiriKedua = `Halo, perkenalkan nama saya ${myName}, berprofesi sebagai ${myProfession} di daerah ${myPlace}`
+console.log(perkenalanDiriKedua)
