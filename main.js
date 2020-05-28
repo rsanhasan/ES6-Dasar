@@ -1,18 +1,13 @@
-//ES5
-function addProduct(name, category) {
-    return {
-        name: name,
-        category: category
-    }
+// get element from html
+const listFoods = ["Kebab", "Pizza", "Nasi Kebuli"];
+// Menampilkan data yang ada di listFood
+
+// Menggunakan Loping
+for (let i = 0; i < listFoods.length; i++) {
+    console.log(listFoods[i])
 }
 
-console.log(addProduct("Susu", "Minuman"))
-
-// ES6
-function addService(name, category) {
-    return {
-        name,
-        category
-    }
-}
-console.log(addService("Instalasi Jaringan", "Networking"))
+// Menggunakan forEach
+listFoods.forEach((food) => {
+    console.log(food)
+})
