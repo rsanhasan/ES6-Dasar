@@ -1,11 +1,18 @@
-const myPlace = "Tangerang Selatan"
-const myName = "Hassan"
-const myProfession = "Lecturer"
+//ES5
+function addProduct(name, category) {
+    return {
+        name: name,
+        category: category
+    }
+}
 
-// Tanpa String Concat
-let perkenalanDiri = "Halo, perkenalkan nama saya " + myName + ", berprofesi sebagai " + myProfession + " di daerah " + myPlace
-console.log(perkenalanDiri)
+console.log(addProduct("Susu", "Minuman"))
 
-// Menggunakan String Concat
-let perkenalanDiriKedua = `Halo, perkenalkan nama saya ${myName}, berprofesi sebagai ${myProfession} di daerah ${myPlace}`
-console.log(perkenalanDiriKedua)
+// ES6
+function addService(name, category) {
+    return {
+        name,
+        category
+    }
+}
+console.log(addService("Instalasi Jaringan", "Networking"))
