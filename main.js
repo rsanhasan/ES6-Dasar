@@ -1,12 +1,16 @@
-// get element from html
-const listFoods = ["Kebab", "Pizza", "Nasi Kebuli"];
-// Menampilkan data yang ada di listFood
+// Modul untuk mahasiswa kampus
 
-// Menggunakan filter
-const Foods = listFoods.filter((food) => {
-    // Melakukan filter untuk data yang memiliki value selain Pizza
-    return food !== "Pizza";
-    // Maka hasilnya adalah ["Kebab",Nasi Kebuli"]
-})
+class Mahasiswa {
+    constructor(namaMahasiswa, namaProdi, jenjangPendidikan) {
+        this.name = namaMahasiswa;
+        this.prodi = namaProdi;
+        this.jenjang = jenjangPendidikan;
+    }
 
-console.log(Foods)
+    daftar() {
+        console.log(`Mahasiswa baru bernama ${this.name} telah mendaftarkan diri pada program studi ${this.prodi} Jenjang ${this.jenjang}`);
+    }
+}
+
+const registrasiMaba = new Mahasiswa('Hassan', 'Teknik Informatika', 'Strata 1');
+registrasiMaba.daftar();
