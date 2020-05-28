@@ -12,5 +12,21 @@ class Mahasiswa {
     }
 }
 
-const registrasiMaba = new Mahasiswa('Hassan', 'Teknik Informatika', 'Strata 1');
-registrasiMaba.daftar();
+// const registrasiMaba = new Mahasiswa('Hassan', 'Teknik Informatika', 'Strata 1');
+// registrasiMaba.daftar();
+
+class Peminatan extends Mahasiswa {
+    constructor(namaMahasiswa, peminatanMateri) {
+        super(namaMahasiswa);
+        this.kompetensi = peminatanMateri;
+    }
+
+    daftarKompetensi() {
+        console.log(`Mahasiswa ${this.name} telah mendaftar peminatan kompetensi ${this.kompetensi}`);
+    }
+
+}
+
+const peminatanMahasiswa = new Peminatan('Hassan', 'Data Science');
+// const peminatanMahasiswa = new Peminatan('Hassan', 'Teknik Informatika', 'Strata 1')
+peminatanMahasiswa.daftarKompetensi();
