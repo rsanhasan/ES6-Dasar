@@ -1,22 +1,12 @@
 // get element from html
-const listAngka = [1, 2, 3, 5, 7];
+const listFoods = ["Kebab", "Pizza", "Nasi Kebuli"];
+// Menampilkan data yang ada di listFood
 
-// menggunakan forEach
-// forEach tidak return value
-const listForEach = listAngka.forEach((angka) => {
-    return angka * angka;
+// Menggunakan filter
+const Foods = listFoods.filter((food) => {
+    // Melakukan filter untuk data yang memiliki value selain Pizza
+    return food !== "Pizza";
+    // Maka hasilnya adalah ["Kebab",Nasi Kebuli"]
 })
 
-console.log(listForEach)
-
-// menggunakan map
-// Map bisa return value
-const listMap = listAngka.map((angka) => {
-    return angka * angka
-})
-
-console.log(listMap)
-
-// Final Thoughts
-// As always, the choice between map() and forEach() will depend on your use case. If you plan to change, alternate, or use the data, you should pick map(), because it returns a new array with the transformed data.
-// But, if you won't need the returned array, don't use map() - instead use forEach() or even a for loop.
+console.log(Foods)
